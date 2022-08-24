@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 450;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #68EACC 0%, #497be8 100%); */
+    background: linear-gradient(to bottom, rgb(48, 60, 225) 0%, rgb(255, 255, 255) 100%)
+}
+
+#wrapper {
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+#wrapper header {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#inputField {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#inputField input {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+    outline: none;
+}
+
+#inputField button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color:  rgb(48, 60, 225);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+#inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#todoList {
+max-height: 250px;
+overflow-y: auto ;
+}
+
+#todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background-color: #f2f3f2f3;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+#todoList li span {
+    position: absolute;
+    right: -45px;
+    background-color: #e74c3c;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#todoList li:hover span{
+right: 0px;
+}
+
+#footer {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer button {
+    border: none;
+    outline: none;
+    background-color: rgb(48, 60, 225);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+
+}
+
+#footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}

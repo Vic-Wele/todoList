@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/baa3b9dcdf.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To-do List App</title>
+  </head>
+  <body>
+    <!-- div to hold the entire content on the website ======================================================================-->
+    <div id="wrapper">
+      <header>Todo-List App</header>
+
+      <!--div that holds the input field ===============================================================================-->
+      <div id="inputField">
+        <input type="text" placeholder="Add your new todo" id="input-field" />
+        <button id="input-btn"><i class="fas fa-plus"></i></button>
+      </div>
+
+      <!-- ul to house or hold the todos -==============================================================================-->
+      <ul id="todoList"></ul>
+      <!-- div for the footer ============================================================================================-->
+      <div id="footer">
+        <span>You have <span id="pendingNum"></span> pending tasks </span>
+        <button id="footer-btn">Clear all</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
